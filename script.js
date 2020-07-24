@@ -26,20 +26,25 @@ const e = document.getElementById("e")
 const f = document.getElementById("f")
 const primeRes = document.getElementById("primeRes")
 f.addEventListener("click", ()=>{
-    Num = e.value
-    numList = []
-    for(i=1;i<=e.value;i++){
-        if(Num%i===0){
-            numList.push(i)
-        }
-    }
-    if(numList.length === 2){
-        primeRes.innerHTML = "The number is prime"
-    }
-    if(numList.length === 1){
-        primeRes.innerHTML = "The number is 1"
+    if(e.value > 9999999){
+        primeRes.innerHTML = "Number too big to calculate. The computer can only handle so much."
     }
     else{
-        primeRes.innerHTML = numList.join(" , ")
+        Num = e.value
+        numList = []
+        for(i=1;i<=e.value;i++){
+            if(Num%i===0){
+                numList.push(i)
+            }
+        }
+        if(numList.length === 2){
+            primeRes.innerHTML = "The number is prime"
+        }
+        if(numList.length === 1){
+            primeRes.innerHTML = "The number is 1"
+        }
+        else{
+            primeRes.innerHTML = numList.join(" , ")
+        }
     }
 })
