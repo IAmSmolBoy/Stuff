@@ -1,0 +1,15 @@
+body{
+    object-fit: cover;
+    background: rgba(64, 64, 64, 1);
+    color: white;
+}
+header{
+    margin: 5vh auto;
+    width: max-content;
+    margin-bottom: 0;
+}
+main{
+    margin: 0 auto;
+    width: max-content;
+    text-align: center;
+}
