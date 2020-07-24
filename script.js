@@ -1,11 +1,14 @@
+// To stop the page from reloading when the submit button is pressed
+const a = document.getElementsByClassName("a")
+for(i=0;i<a.length;i++){
+    a[i].addEventListener("submit", (e)=>{
+        e.preventDefault()
+    })
+}
 // Randomiser
-const a = document.getElementById("a")
 const c = document.getElementById("c")
 const d = document.getElementById("d")
 const res = document.getElementById("result")
-a.addEventListener("submit", (e)=>{
-    e.preventDefault()
-})
 d.addEventListener("click", (e)=>{
     var RanList = c.value.split(",")
     var RanNum = Math.random() * RanList.length
@@ -18,3 +21,25 @@ d.addEventListener("click", (e)=>{
 })
 
 
+// Prime number determiner
+const e = document.getElementById("e")
+const f = document.getElementById("f")
+const primeRes = document.getElementById("primeRes")
+f.addEventListener("click", ()=>{
+    Num = e.value
+    numList = []
+    for(i=1;i<=e.value;i++){
+        if(Num%i===0){
+            numList.push(i)
+        }
+    }
+    if(numList.length === 2){
+        primeRes.innerHTML = "The number is prime"
+    }
+    if(numList.length === 1){
+        primeRes.innerHTML = "The number is 1"
+    }
+    else{
+        primeRes.innerHTML = numList.join(" , ")
+    }
+})
