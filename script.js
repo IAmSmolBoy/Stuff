@@ -41,7 +41,7 @@ f.addEventListener("click", ()=>{
             primeRes.innerHTML = "The number is prime"
         }
         if(numList.length === 1){
-            primeRes.innerHTML = "The number is 1"
+            primeRes.innerHTML = "1 is not a prime number"
         }
         else{
             primeRes.innerHTML = numList.join(" , ")
