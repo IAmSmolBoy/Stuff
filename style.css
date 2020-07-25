@@ -12,4 +12,14 @@ main{
     margin: 0 auto;
     width: 70vw;
     text-align: center;
+    display: flex;
+    margin-top: 2vh;
+}
+h3, form{
+    width: max-content;
+    margin: 0 auto;
+}
+section{
+    margin: 0 auto;
+    width: min-content;
 }
