@@ -11,23 +11,47 @@
         <h2>A few things that I found useful</h2>
     </header>
     <main>
-        <section>
-            <h3>Randomiser</h3>
-            <h4>This randomiser will give a random choice. Separate each choice with a comma (,)</h4>
-            <form class="a">
-                <input type="text" id="c" placeholder="Choices" required>
-                <input type="submit" id="d">
-            </form>
-            <p id="result"></p>
+        <section class="section">
+            <section>
+                <h3>Randomiser</h3>
+                <h4>This randomiser will give a random choice. Separate each choice with a comma (,)</h4>
+                <form class="a">
+                    <input type="text" id="c" placeholder="Choices" required>
+                    <input type="submit" id="d">
+                </form>
+                <p id="result"></p>
+            </section>
+            <section>
+                <h3>Factor Finder</h3>
+                <h4>It will check if the number is a prime number, if its not the multiples will be listed</h4>
+                <form class="a">
+                    <input type="number" id="e" placeholder="Number" required>
+                    <input type="submit" id="f">
+                </form>
+                <p id="primeRes"></p>
+            </section>
         </section>
-        <section>
-            <h3>Factor Finder</h3>
-            <h4>It will check if the number is a prime number, if its not the multiples will be listed</h4>
-            <form class="a">
-                <input type="number" id="e" placeholder="Number" required>
-                <input type="submit" id="f">
-            </form>
-            <p id="primeRes"></p>
+        <section class="section">
+            <section>
+                <h3>Random Number Generator</h3>
+                <h4>This will randomly generate a number between the given numbers. Seperate the minimum number and maximum number with a comma (,)</h4>
+                <form class="a">
+                    <input type="text" id="m" placeholder="Min and max numbers">
+                    <input type="submit" id="n">
+                </form>
+                <p id="ranNum"></p>
+            </section>
+            <section>
+                <h3>Factorisation</h3>
+                <h4>It will return a solution to the quadratic equation</h4>
+                <form class="a">
+                    <input type="number" id="g" required>x^2 + 
+                    <input type="number" id="h" required>xy + 
+                    <input type="number" id="k" required>y^2 = 0
+                    <input type="submit" id="l">
+                </form>
+                <p id="factorised"></p>
+            </section>
         </section>
     </main>
     <script src="script.js"></script>

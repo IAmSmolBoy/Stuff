@@ -28,6 +28,13 @@ section{
 input {
     max-width: 30vw;
 }
+#g, #h, #k {
+    width: 3vw;
+}
+.section {
+    width: 98vw !important;
+    margin: 0 auto;
+}
 @media (orientation:portrait) {
     section{
         width: 40vw;
