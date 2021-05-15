@@ -17,6 +17,7 @@ document.getElementById("d").addEventListener("click", ()=>{
     else{
         res.innerHTML = `The result is "${RanList[Math.round(RanNum)]}"`
     }
+    c.value = ""
 })
 
 
@@ -37,13 +38,14 @@ document.getElementById("f").addEventListener("click", ()=>{
         if(numList.length === 2){
             primeRes.innerHTML = "The number is prime"
         }
-        if(numList.length === 1){
+        else if(numList.length === 1){
             primeRes.innerHTML = "1 is not a prime number"
         }
         else{
             primeRes.innerHTML = numList.join(" , ")
         }
     }
+    e.valueL = ""
 })
 
 
@@ -66,6 +68,9 @@ document.getElementById("l").addEventListener("click", () => {
             factorised.innerHTML = "The soutions are " + String(result) + " and " + String(-result)
         }
     }
+    g.value = ""
+    h.value = ""
+    k.value = ""
 })
 
 
@@ -77,4 +82,5 @@ document.getElementById("n").addEventListener("click", () => {
     let min = Math.min(parseInt(maxMin[0]), parseInt(maxMin[1]))
     let max = Math.max(parseInt(maxMin[0]), parseInt(maxMin[1]))
     ranNum.innerHTML = Math.round((max - min) * Math.random()) + min
+    m.value = ""
 })
